@@ -1,15 +1,19 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
-    font-family: "Merriweather";
+    font-family: "Inter";
 }
 
 body{
+    color: #fff;
+    background-image: url("bg.jpg");
+    background-size: cover;
     
 }
 
 nav {
-  background-color: #cfd8dc;
+    background-image: url("bg.jpg");
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     padding: 0 3.125rem;
@@ -21,8 +25,8 @@ nav {
     right: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(191, 214, 196, 0.9);
     backdrop-filter: blur(1px);
+    opacity: 0.9;
 }
 nav ul {
   display: flex; /* 5 */
@@ -32,11 +36,10 @@ nav ul {
 
 nav li {
   padding-left: 3rem; /* 7! */
-  
 }
 nav a {
     text-decoration: none;
-    color: #0d47a1
+    color: #fff;
   }
   
 .mainheader{
@@ -54,13 +57,7 @@ section{
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-section:nth-of-type(odd) {
-    background-color: #f8f8f8; /* Light gray for odd sections */
-}
 
-section:nth-of-type(even) {
-    background-color: rgb(219, 234, 247); /* White for even sections */
-}
 .projects-header{
   top: 0;
   float: left;
@@ -302,8 +299,8 @@ h1{
   }
 }
 #mainheader .headshot img {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.4s ease;
